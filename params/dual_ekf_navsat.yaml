@@ -7,6 +7,7 @@ ekf_se_odom:
   transform_time_offset: 0.0
   transform_timeout: 0.0
   print_diagnostics: true
+  publish_tf: true
   debug: false
 
   map_frame: map
@@ -78,6 +79,7 @@ ekf_se_map:
   transform_time_offset: 0.0
   transform_timeout: 0.0
   print_diagnostics: true
+  publish_tf: true
   debug: false
 
   map_frame: map

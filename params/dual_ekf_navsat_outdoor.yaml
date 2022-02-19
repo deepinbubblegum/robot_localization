@@ -27,17 +27,17 @@ ekf_se_odom:
   odom0_relative: false
 
   imu0: imu/data
-  imu0_config: [false, false, false,
-                true,  true,  false,
-                false, false, false,
-                true,  true,  true,
-                true,  true,  true]
-
   # imu0_config: [false, false, false,
+  #               true,  true,  false,
   #               false, false, false,
-  #               false, false, false,
-  #               false, false, false,
-  #               true, true, true]  
+  #               true,  true,  true,
+  #               true,  true,  true]
+
+  imu0_config: [false, false, false,
+                false, false, false,
+                false, false, false,
+                false, false, false,
+                true, true, true]  
 
   imu0_nodelay: false
   imu0_differential: false
@@ -109,7 +109,7 @@ ekf_se_map:
   world_frame: map
 
   odom0: odometry/wheel
-  odom0_config: [false, false, false,
+  odom0_config: [true,  true, false,
                  false, false, false,
                  true,  true,  true,
                  false, false, true,
@@ -206,3 +206,4 @@ navsat_transform:
   publish_filtered_gps: true
   use_odometry_yaw: false
   wait_for_datum: true
+  datum: [13.776323777388871, 100.75430758092513, 0.0]

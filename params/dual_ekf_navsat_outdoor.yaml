@@ -101,7 +101,7 @@ ekf_se_map:
   transform_timeout: 0.0
   print_diagnostics: true
   debug: false
-  publish_tf: true
+  publish_tf: false
 
   map_frame: map
   odom_frame: odom
@@ -205,5 +205,4 @@ navsat_transform:
   broadcast_cartesian_transform: true
   publish_filtered_gps: true
   use_odometry_yaw: false
-  wait_for_datum: true
-  datum: [13.776323777388871, 100.75430758092513, 0.0]
+  wait_for_datum: false
